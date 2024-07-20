@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activity.CarRotationAtTimeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Rotation Quaternion 1 -->
+        <TextView
+            android:id="@+id/textViewQuaternion1"
+            style="@style/SectionTitle"
+            android:text="Quaternion 1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextAxisW1"
+                style="@style/InputField"
+                android:hint="w"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/editTextAxisX1"
+                style="@style/InputField"
+                android:hint="x"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/editTextAxisY1"
+                style="@style/InputField"
+                android:hint="y"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/editTextAxisZ1"
+                style="@style/InputField"
+                android:hint="z"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <!-- Rotation Quaternion 2 -->
+        <TextView
+            android:id="@+id/textViewQuaternion2"
+            style="@style/SectionTitle"
+            android:text="Quaternion 2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextAxisW2"
+                style="@style/InputField"
+                android:hint="w"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/editTextAxisX2"
+                style="@style/InputField"
+                android:hint="x"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/editTextAxisY2"
+                style="@style/InputField"
+                android:hint="y"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/editTextAxisZ2"
+                style="@style/InputField"
+                android:hint="z"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/buttonSubmitRotation"
+            style="@style/ActionButton"
+            android:layout_width="match_parent"
+            android:text="Submit" />
+
+        <!-- Return Button -->
+        <Button
+            android:id="@+id/buttonReturnRotation"
+            style="@style/ActionButton"
+            android:layout_width="match_parent"
+            android:text="Return" />
+
+    </LinearLayout>
+</ScrollView>

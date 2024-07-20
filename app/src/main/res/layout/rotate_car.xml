@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".activity.RotateCarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Rotation Axis Vector -->
+        <TextView
+            android:id="@+id/textViewAxisVector"
+            style="@style/SectionTitle"
+            android:text="Axis Vector" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextAxisX"
+                style="@style/InputField"
+                android:hint="x"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/editTextAxisY"
+                style="@style/InputField"
+                android:hint="y"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/editTextAxisZ"
+                style="@style/InputField"
+                android:hint="z"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <!-- Rotation Angle -->
+        <TextView
+            android:id="@+id/textViewRotationAngle"
+            style="@style/SectionTitle"
+            android:text="Rotation Angle" />
+
+        <EditText
+            android:id="@+id/editTextRotationAngle"
+            style="@style/InputField"
+            android:hint="Angle" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/buttonSubmitRotation"
+            style="@style/ActionButton"
+            android:layout_width="match_parent"
+            android:text="Submit" />
+
+        <!-- Return Button -->
+        <Button
+            android:id="@+id/buttonReturnRotation"
+            style="@style/ActionButton"
+            android:layout_width="match_parent"
+            android:text="Return" />
+
+    </LinearLayout>
+</ScrollView>
